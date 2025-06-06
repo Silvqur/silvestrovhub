@@ -1,146 +1,55 @@
 import Link from "next/link";
-import { Popover, PopoverButton, PopoverPanel } from "@headlessui/react";
+import Image from "next/image";
+import TopBar from "@/components/topheader";
 
 export default function Home() {
-  const data = [
-    { link: "/news", name: "News Page" },
-    { link: "/home", name: "Home Page" },
-  ];
-
+  const data = [ { title: "Site is online!", desc: "Congratulations for my team)" }, { title: "Site is online!", desc: "Congratulations for my team)" }, { title: "Site is online!", desc: "Congratulations for my team)" }, { title: "Site is online!", desc: "Congratulations for my team)" }, { title: "Site is online!", desc: "Congratulations for my team)" }, { title: "Site is online!", desc: "Congratulations for my team)" }, { title: "Site is online!", desc: "Congratulations for my team)" }, { title: "Site is online!", desc: "Congratulations for my team)" }, { title: "Site is online!", desc: "Congratulations for my team)" }, { title: "Site is online!", desc: "Congratulations for my team)" }, { title: "Site is online!", desc: "Congratulations for my team)" }, { title: "Site is online!", desc: "Congratulations for my team)" }, { title: "Site is online!", desc: "Congratulations for my team)" }]
+  const pages = [{ href: "/home", name: "Home page" }, { href: "/news", name: "News page" }]
   return (
-    <main className="bg-white h-full">
-      <div className="flex justify-center mb-5 rounded-md self-center  ">
-        <div className="p-1 flex rounded-lg self-center justify-between flex-grow max-w-[70rem] bg-blue-300">
-          <div className="hidden lg:flex p-1 divide-x-2 self-center">
-            <Link
-              href="https://x.com/silver_mladshiy"
-              className="flex self-center"
-            >
-              <h1 className="text-blue-500 font-bold hover:text-blue-700 hover:underline mx-5 self-center">
-                Twitter
-              </h1>
-            </Link>
-            <Link
-              href="https://www.reddit.com/user/Bubbly_Parfait_5823/"
-              className="flex"
-            >
-              <h1 className="text-blue-500 font-bold hover:text-blue-700 hover:underline mx-5">
-                Reddit
-              </h1>
-            </Link>
-            <Link
-              href="https://www.facebook.com/profile.php?id=61563941855244"
-              className="flex"
-            >
-              <h1 className="text-blue-500 font-bold hover:text-blue-700 hover:underline mx-5">
-                Facebook
-              </h1>
-            </Link>
-            <Link href="https://www.youtube.com/@bytewizard42" className="flex">
-              <h1 className="text-blue-500 font-bold over:text-blue-700 hover:underline mx-5">
-                Youtube
-              </h1>
-            </Link>
-          </div>
-          <Popover>
-            <PopoverButton className="self-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="size-7 text-blue-500 self-center pt-2"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75"
-                />
+    <main className="bg-[#1f313d]">
+      <TopBar></TopBar>
+      <div className="relative">
+        <Image
+          src="/third1.png"
+          height={5000}
+          width={5000}
+          alt="???"
+          className="shadow-2xl"
+        />
+        <p className="absolute top-[330px] right-[300px] text-6xl font-extrabold">THE FUTURE<span className="underline mx-2">BEST IT</span>COMPANY IN<span className="ml-2 underline">RUSSIA</span></p>
+      </div>
+      <Link href="#" className="flex justify-center mx-auto mt-3">
+        <div className="w-full bg-[#345166] p-2 lg:p-4">
+          <p className="text-[#e4c8b2] lg:text-3xl hover:underline flex justify-center font-medium">You can <span className="font-bold hover:underline mx-3 shadow-sm">apply for a job</span>on our website.</p>
+        </div>
+      </Link>
+      <div className="bg-[#345166] p-2 lg:p-4 mt-6 lg:mt-10">
+        <p className="text-white font-extrabold lgtext-2xl">Announcements about the company:</p>
+        <div className="flex overflow-x-auto lg:flex-wrap mt-5 gap-7">
+          {data.map((itm, index) => (
+            <div className="flex" key={index}>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="lg:size-11 size-8 flex-none  mr-2 text-[#25383d] border-[1px] border-[#273a40] rounded-lg shadow-lg">
+                <path strokeLinecap="round" strokeLinejoin="round" d="m20.25 7.5-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
               </svg>
-            </PopoverButton>
-            <PopoverPanel>
-              <div className="space-y-3">
-                <Link
-                  href="https://x.com/silver_mladshiy"
-                  className="flex self-center"
-                >
-                  <h1 className="text-blue-500 font-bold hover:text-blue-700 hover:underline mx-5 self-center">
-                    Twitter
-                  </h1>
-                </Link>
-                <Link
-                  href="https://www.reddit.com/user/Bubbly_Parfait_5823/"
-                  className="flex"
-                >
-                  <h1 className="text-blue-500 font-bold hover:text-blue-700 hover:underline mx-5">
-                    Reddit
-                  </h1>
-                </Link>
-                <Link
-                  href="https://www.facebook.com/profile.php?id=61563941855244"
-                  className="flex"
-                >
-                  <h1 className="text-blue-500 font-bold hover:text-blue-700 hover:underline mx-5">
-                    Facebook
-                  </h1>
-                </Link>
-                <Link
-                  href="https://www.youtube.com/@bytewizard42"
-                  className="flex"
-                >
-                  <h1 className="text-blue-500 font-bold over:text-blue-700 hover:underline mx-5">
-                    Youtube
-                  </h1>
-                </Link>
+              <div className="w-[25rem]">
+                <h1 className="text-[#c4c4bc] text-xl font-bold text-nowrap">{itm.title}</h1>
+                <p className="text-[#a3a39b] w-[15rem]">{itm.desc}</p>
+                <p className="text-[#a3a39b] mt-2">{itm.date}</p>
               </div>
-            </PopoverPanel>
-          </Popover>
-          <div className="flex p-1 divide-x-2">
-            <Link href="#" className="flex">
-              <h1 className="text-blue-500 font-bold over:text-blue-700 hover:underline mx-5">
-                Sing up
-              </h1>
-            </Link>
-            <Link href="#" className="flex">
-              <h1 className="text-blue-500 font-bold over:text-blue-700 hover:underline mx-5">
-                Log in
-              </h1>
-            </Link>
-            <Link href="#" className="flex">
-              <h1 className="text-blue-500 font-bold over:text-blue-700 hover:underline mx-5">
-                Help
-              </h1>
-            </Link>
-          </div>
+            </div>
+          ))}
         </div>
       </div>
-      <div className="flex justify-center">
-        <h1 className="text-red-500 text-2xl bg-red-100 p-5 flex underline border-2 border-red-300  rounded-xl">
-          SILVESTROV HUB INC.
-        </h1>
-      </div>
-      <div className="mt-5 flex justify-center">
-        <h1 className="text-black  bg-gray-300 border-2 border-gray-400 p-1">
-          Cteated by Silver_Mladshiy
-        </h1>
-      </div>
-      <div className="mt-7 ">
-        <div className="flex justify-center">
-          <h1 className="text-xl text-blue-500">Site navigation:</h1>
-        </div>
-        <div className="flex justify-center mt-5">
-          <div className="space-y-4">
-            {data.map((itm, index) => (
-              <div key={index} className="">
-                <Link href={itm.link}>
-                  <h1 className="text-blue-500 font-bold hover:text-blue-700 underline">
-                    {itm.name}
-                  </h1>
-                </Link>
-              </div>
-            ))}
-          </div>
+      <div className="bg-[#345166] p-2 lg:p-4 mt-6 lg:mt-10">
+        <p className="text-white font-extrabold lg:text-2xl">All avaible pages:</p>
+        <div className="flex  mt-5">
+          {pages.map((itm, index) => (
+            <div key={index}>
+              <Link href={itm.href} className="flex ml-7">
+                <p className="text-xl text-[#a3a39b] hover:text-blue-600 font-bold hover:underline delay-100 flex p-3">{itm.name}</p>
+              </Link>
+            </div>
+          ))}
         </div>
       </div>
     </main>
