@@ -12,19 +12,19 @@ export default function TopBar() {
     ]
 
     return (
-        <div className="bg-[#273a40] flex justify-between p-2 sticky top-0 px-5 z-50">
+        <div className="bg-[#273a40] flex justify-between p-3 sticky top-0 px-2 lg:px-5 z-50">
             <Link href="/home" className="">
                 <div className="flex">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="198.943 203.345 83.627 80.986" className=" size-5 lg:size-12 border-[1px] border-[#935739] mr-1 lg:mr-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="198.943 203.345 83.627 80.986" className=" size-7 lg:size-12 border-[1px] border-[#935739] mr-1 lg:mr-2">
                         <text style={{ whiteSpace: 'pre', fill: 'rgb(147, 87, 57)', fontFamily: 'Arial, sans-serif', fontSize: '28px' }} x="218.31" y="238.557">SV</text>
                         <text style={{ whiteSpace: 'pre', fill: 'rgb(147, 87, 57)', fontFamily: 'Arial, sans-serif', fontSize: '28px' }} x="211.268" y="265.845">HUB</text>
                     </svg>
-                    <p className="text-[#935739] lg:text-4xl self-center">SILVESTROV HUB</p>
+                    <p className="text-[#935739] text-xl lg:text-4xl self-center">SILVESTROV HUB</p>
                 </div>
             </Link>
             <Popover className="relative">
                 <PopoverButton className="">
-                    <p className="text-[#935739] lg:text-3xl self-center">Menu</p>
+                    <p className="text-[#935739] lg:text-3xl self-center text-xl">Menu</p>
                 </PopoverButton>
                 <PopoverPanel className="absolute right-0 z-50" transition>
                     <div className="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-[#545748] text-sm/6 shadow-lg">
