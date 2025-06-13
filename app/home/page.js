@@ -27,7 +27,7 @@ export default function Home() {
         <div className="w-full mt-5">
           <div className="w-full border-b-[1px] border-gray-200 pb-5">
             <h1 className="text-blue-500 text-2xl font-bold">About Us</h1>
-            <p className="text-wrap text-black mt-3 text-md">SILVESTROV HUB is a team of experts that creates modern websites and smart Telegram bots. We turn your ideas into effective digital solutions, combining creative design, reliable technology, and a personalized approach. Our goal is to help your business or project stand out, become user-friendly, and succeed online. Trust us with your tasks, and we'll create a product that exceeds expectations!</p>
+            <p className="text-wrap text-black mt-3 text-md">SILVESTROV HUB is a team of experts that creates modern websites and smart Telegram bots. We turn your ideas into effective digital solutions, combining creative design, reliable technology, and a personalized approach. Our goal is to help your business or project stand out, become user-friendly, and succeed online. Trust us with your tasks, and we will create a product that exceeds expectations!</p>
           </div>
           <div className="w-full border-b-[1px] border-gray-200 py-5">
             <h1 className="text-blue-500 text-2xl font-bold">Our Staff</h1>
