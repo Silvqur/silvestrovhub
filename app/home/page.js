@@ -4,7 +4,11 @@ import TopBar from "@/components/topheader";
 
 export default function Home() {
 
-  const data = [{ title: "Site is online!", desc: "Congratulations for my team) ", date: "Jun 6 12:34 PM" }]
+  const data = [
+    { title: "Site is online!", desc: "Congratulations for my team) ", date: "Jun 6 12:34 PM" },
+    { title: "SocialNetwork", desc: "We strted a social network on our website. Link below", date: "Jun 12 10:11 PM" },
+    { title: "The day of no terurn", desc: "The Google SEO just indexed our website. Now when you search the name 'silvestrov hub' we are on the first place!", date: "Jun 13 03:10 PM" },
+  ]
   const pages = [{ href: "/home", name: "Home page" }, { href: "/news", name: "News page" }]
 
   return (
