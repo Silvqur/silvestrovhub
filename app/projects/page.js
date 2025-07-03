@@ -5,7 +5,7 @@ import Link from "next/link"
 
 export default function Projects() {
 
-    const data = [{ src: "/logo1.png", href: "#", title: "Svoyazemlya", text: "We specialize in comprehensive groundwork solutions, delivering expert services from excavation to site preparation for various projects.", path: "svoyazemlya.vercel.app" },]
+    const data = [{ src: "/logo1.png", href: "#", title: "Svoyazemlya", text: "We specialize in comprehensive groundwork solutions, delivering expert services from excavation to site preparation for various projects.", path: "svoyazemlya.vercel.app/" },]
 
     return (
         <main className="">
