@@ -3,10 +3,10 @@ import Bottom from "@/components/botem"
 
 export default function Uses() {
 
-    const data = [{ title: "16” HP laptop (2019)", des: "I like my laptop, it's not so big and very useful." },
+    const data = [{ title: "16” HP laptop (2019)", des: "I like my laptop, it is not so big and very useful." },
     { title: "Xiaomi monitor 27”", des: "The only display on the market if you want something HiDPI and 27”." },
-    { title: "Apple Magic Keyboard", des: "They don’t make keyboards the way othres do." },
-    { title: "Xiaomi mouse", des: "That's just cheap and cute)" },
+    { title: "Apple Magic Keyboard", des: "They do not make keyboards the way othres do." },
+    { title: "Xiaomi mouse", des: "That is just cheap and cute)" },
     { title: "AeroCool chair", des: "Very comfortable...." },
     { title: "Sony headphones", des: "They have a realy good sound. I have stereo version." },
     ]
