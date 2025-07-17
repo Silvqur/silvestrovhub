@@ -10,14 +10,14 @@ export default function Projects() {
     return (
         <main className="">
             <TopBar></TopBar>
-            <div className="max-w-[80rem] mx-auto border-x-[1px] border-[#1726506c] pt-10 px-3 lg:px-10 bg-[#090f1f6c] pb-16 lg:pb-40">
+            <div className="max-w-[100rem] mx-auto border-x-[1px] border-[#000000] pt-10 px-3 lg:px-10 bg-[#191919] pb-16 lg:pb-40 min-h-screen flex flex-col">
                 <div className="pt-10 ">
                     <div className="max-w-[50rem]">
                         <h1 className="text-4xl lg:text-5xl font-bold text-white">Projects I have created to make an impact.</h1>
                         <p className="text-gray-400 my-4 lg:my-8 ">I have worked on many small projects over the years because I love to create things. I put a lot of effort into each one. But, the projects you see here are the best ones I have made, and I am very proud of them. With these projects, I learned new things and got better at my skills. I felt really good when I finished them. Please look at them, and maybe you will find something you like.</p>
                     </div>
                 </div>
-                <div className="lg:mt-20 mt-16 flex flex-wrap gap-7">
+                <div className="lg:mt-20 mt-16 flex flex-wrap gap-7 flex-grow">
                     {data.map((way, index) => (
                         <div key={index}>
                             <div className="py-4 lg:py-0 rounded-2xl max-w-[25rem] p-1 lg:p-0 hover:bg-[#1726506c]/25">

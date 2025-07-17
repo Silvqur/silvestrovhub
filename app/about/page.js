@@ -7,7 +7,7 @@ export default function About() {
     return (
         <main>
             <TopBar></TopBar>
-            <div className="max-w-[80rem] mx-auto border-x-[1px] border-[#1726506c] p-3 lg:px-10 bg-[#090f1f6c] pb-16 lg:pb-40">
+            <div className="max-w-[100rem] mx-auto border-x-[1px] border-[#000000] p-3 lg:px-10 bg-[#191919] pb-16 lg:pb-40 min-h-screen flex flex-col">
                 <div className="lg:mt-24 mt-14">
                     <h1 className="flex justify-center text-white text-4xl/5 ">About me</h1>
                 </div>

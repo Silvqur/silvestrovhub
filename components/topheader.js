@@ -6,12 +6,12 @@ export default function TopBar() {
     const wayData = [{ name: "About", href: "/about" }, { name: "Projects", href: "/projects" }, { name: "Uses", href: "/uses" }]
 
     return (
-        <div className="max-w-[80rem] mx-auto ">
-            <div className="border-x-[1px] border-[#1726506c] pt-5 bg-[#090f1f6c] pb-5">
-                <div className="bg-[#030e24]  max-w-lg lg:max-w-2xl mx-auto  flex-grow flex justify-between p-5 rounded-full shadow-lg shadow-zinc-300  px-7">
+        <div className="max-w-[100rem] mx-auto ">
+            <div className="border-x-[1px] border-[#000000]  bg-[#090f1f6c]">
+                <div className="bg-[#0d0b0b] flex-grow flex justify-between p-5 shadow-md shadow-[#221d1d] px-7">
                     <div>
                         <Link href={"/"}>
-                            <p className="text-xl text-white font-bold">Mike Silvestrov</p>
+                            <p className="text-xl text-white font-bold">$ilvestrov.Hub`</p>
                         </Link>
                     </div>
                     <div className="hidden  lg:flex gap-x-12">
