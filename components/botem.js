@@ -16,7 +16,7 @@ export default function Bottom() {
                 ))}
             </div>
             <div className="mt-5 lg:mt-0 flex justify-center lg:block lg:justify-normal">
-                <p className="text-gray-300">© 2025 Spencer Sharp. All rights reserved.</p>
+                <p className="text-gray-300">© 2025 $ilvestrov.Hub` All rights reserved.</p>
             </div>
         </div>
     )

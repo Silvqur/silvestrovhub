@@ -8,7 +8,7 @@ export default function Home() {
     <main className="w-full h-full">
       <TopBar></TopBar>
       <div className="max-w-[100rem] mx-auto border-x-[1px] border-[#000000] bg-[#191919] pb-5 lg:pb-10">
-        <div className="bg-gradient-to-tl via-[#3f2127] shadow-2xl shadow-[#0d0a0a] from-[#0c0909] to-[#7b2d3c] p-5 pb-48 pt-10">
+        <div className="bg-gradient-to-tl via-[#3f2127] shadow-2xl shadow-[#0d0a0a] from-[#0c0909] to-[#7b2d3c] lg:p-5 p-1 pb-20 lg:pb-48 pt-10">
           <Image
             src={"/i.jpg"}
             height={5000}
@@ -18,7 +18,7 @@ export default function Home() {
             loading="eager"
           />
           <div className="max-w-[50rem] mt-8 p-2 lg:p-6">
-            <h1 className="text-white lg:text-5xl/10 text-3xl/10">Software engineer, entrepreneur, and space enthusiast.</h1>
+            <h1 className="text-white lg:text-5xl/10 text-3xl/10">Software engineer, entrepreneur, and space fan.</h1>
             <h1 className="text-gray-400 my-4 lg:my-8">I’m Mike Silvestrov, a software engineer skilled in Python, JavaScript, and Next.js. I build dynamic, scalable web solutions with a focus on performance and innovation. Let’s create cutting-edge software!</h1>
             {/* Links Github, Youtube etc. */}
             <div className="flex gap-x-7">
