@@ -5,7 +5,7 @@ import Link from "next/link"
 
 export default function Projects() {
 
-    const data = [{ src: "/logo1.png", href: "#", title: "Svoyazemlya", text: "We specialize in comprehensive groundwork solutions, delivering expert services from excavation to site preparation for various projects.", path: "svoyazemlya.vercel.app/" },]
+    const data = [{ src: "/logo1.png", href: "https://svoyazemlyanow.vercel.app/", title: "Svoyazemlya", text: "We specialize in comprehensive groundwork solutions, delivering expert services from excavation to site preparation for various projects.", path: "svoyazemlya.vercel.app/" },]
 
     return (
         <main className="">
@@ -20,7 +20,7 @@ export default function Projects() {
                 <div className="lg:mt-20 mt-16 flex flex-wrap gap-7 flex-grow">
                     {data.map((way, index) => (
                         <div key={index}>
-                            <div className="py-4 lg:py-0 rounded-2xl max-w-[25rem] p-1 lg:p-0 hover:bg-[#1726506c]/25">
+                            <div className="py-4  rounded-2xl max-w-[25rem] p-1 lg:p-7 hover:bg-[#1726506c]/25">
                                 <div className="">
                                     <Image
                                         src={way.src}
