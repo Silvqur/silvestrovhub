@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export default function Bottom() {
 
-    const data = [{ name: "Home", href: "/" }, { name: "About", href: "/about" }, { name: "Projects", href: "/projects" }, { name: "Uses", href: "/uses" }]
+    const data = [{ name: "Home", href: "/" }, { name: "About", href: "/about" }, { name: "Projects", href: "/projects" }, { name: "Uses", href: "/uses" }, { name: "Secret Page", href: "/secret_pages" }]
 
     return (
         <div className="w-full block lg:flex justify-between border-x-[1px] py-5 p-3 lg:p-10  bg-[#191919] border-t-[1px] border-[#000000] max-w-[100rem] mx-auto">
