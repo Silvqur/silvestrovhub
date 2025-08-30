@@ -54,13 +54,13 @@ export default function TopBar() {
                     </PopoverButton>
                     <PopoverPanel
                         transition
-                        className="absolute  z-10 mt-5 flex w-screen max-w-sm right-5 px-4 transition data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in"
+                        className="absolute  z-10 mt-5 flex w-screen max-w-[17rem] right-5 px-4 transition data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in"
                     >
-                        <div className="bg-[#191919] rounded-xl border-[1px] border-[#000000] w-full">
+                        <div className="bg-[#2e2e2e] rounded-xl border-[1px] border-[#000000] w-full">
                             <div className="p-4 font-mono text-center">
                                 <p>Navigation:</p>
                             </div>
-                            <div className="space-y-4 px-4 pb-4 divide-y-2">
+                            <div className="space-y-4 px-4 pb-4 divide-gray-600 divide-y-2">
                                 {wayData.map((way, index) => (
                                     <div key={index}>
                                         <Link href={way.href} className="flex justify-center gap-x-2 mt-4 px-2">
