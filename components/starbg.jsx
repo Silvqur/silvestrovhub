@@ -45,11 +45,11 @@ export default function RandomStars({ density = 500 }) {
   }, [density])
 
   return (
-    <div className="stars-container w-screen h-screen"> {/* SINGLE CONTAINER: Locks to viewport! */}
+    <div className="stars-container w-screen h-screen -z-50"> {/* SINGLE CONTAINER: Locks to viewport! */}
       {stars.map(star => (
         <div
           key={star.id}
-          className="random-star"
+          className="random-star -z-50"
           style={{
             left: `${star.left}%`,
             top: `${star.top}%`,
