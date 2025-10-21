@@ -28,3 +28,7 @@ body {
     text-wrap: balance;
   }
 }
+
+.space-bg {
+  background: linear-gradient(135deg, #000000 0%, #0a0a23 100%);
+}
