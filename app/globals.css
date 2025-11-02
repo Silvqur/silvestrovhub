@@ -5,6 +5,10 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --star-gold: #ffd54a;
+  --panel-bg: rgba(255,255,255,0.03);
+  --panel-border: rgba(255,255,255,0.06);
+  --muted: #9ca3af;
   height: 100%;
 }
 
@@ -31,4 +35,66 @@ body {
 
 .space-bg {
   background: linear-gradient(135deg, #000000 0%, #0a0a23 100%);
+}
+
+/* Design tokens and helper classes used by the improved homepage */
+.text-star-gold {
+  color: var(--star-gold);
+}
+
+.bg-panel {
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+}
+
+.text-cool-gray {
+  color: var(--muted);
+}
+
+.shadow-soft {
+  box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+}
+
+/* subtle text glow for headings */
+.glow {
+  text-shadow: 0 6px 18px rgba(0,0,0,0.6), 0 1px 0 rgba(255,213,74,0.03);
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(90deg, rgba(255,213,74,1) 0%, rgba(255,186,59,1) 100%);
+  color: #000000;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: transform .16s ease, filter .16s ease;
+}
+.btn-primary:hover { transform: translateY(-2px); filter:brightness(0.98); }
+
+.btn-ghost {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.06);
+  color: #ffffff;
+  padding: 0.45rem 0.9rem;
+  border-radius: 0.5rem;
+}
+
+/* subtle animations */
+@keyframes fadeUp { from { opacity: 0; transform: translateY(8px);} to { opacity: 1; transform: translateY(0);} }
+.fade-up { animation: fadeUp .6s ease both; }
+
+/* Timeline for education / experience */
+.timeline { position: relative; padding-left: 1rem; }
+.timeline::before { content: ""; position: absolute; left: 8px; top: 0; bottom: 0; width: 2px; background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02)); }
+.timeline-item { position: relative; padding: 0.75rem 1rem 0.75rem 2.5rem; border-radius: .5rem; }
+.timeline-item::before { content: ""; position: absolute; left: -0.45rem; top: 50%; transform: translateY(-50%); width: 12px; height: 12px; border-radius: 9999px; background: var(--star-gold); box-shadow: 0 0 12px rgba(255,213,74,0.18); }
+.timeline-year { font-weight: 700; color: var(--star-gold); }
+
+/* Glass panel helper */
+.glass-panel { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); backdrop-filter: blur(8px); }
+
+/* Responsive tweaks */
+@media (max-width: 640px) {
+  .timeline { padding-left: 0.5rem; }
+  .timeline::before { left: 4px; }
 }
